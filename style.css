@@ -116,6 +116,7 @@ body {
   margin-top: 20px;
   font-style: italic;
 }
+
 #musicBtn {
   position: fixed;
   bottom: 20px;
@@ -127,7 +128,7 @@ body {
   border-radius: 30px;
   font-size: 14px;
   cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -141,4 +142,79 @@ body {
   z-index: 999;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+/* =========================
+   MOBILE RESPONSIVE STYLES
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .scroll {
+    font-size: 0.9rem;
+  }
+
+  /* GALLERY */
+  .gallery {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 30px 15px;
+  }
+
+  .gallery img {
+    flex-shrink: 0;
+    width: 220px;
+    height: 300px;
+  }
+}
+
+/* MESSAGE */
+.message {
+  padding: 50px 15px;
+}
+
+#typewriter {
+  font-size: 1.05rem;
+}
+
+/* REASONS */
+.reasons {
+  padding: 50px 15px;
+}
+
+.reasons li {
+  font-size: 1.05rem;
+}
+
+/* FINAL */
+.final {
+  padding: 40px 15px;
+}
+
+.final h1 {
+  font-size: 2.2rem;
+}
+
+.final p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* OVERLAY */
+#overlay {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 20px;
+}
 }
